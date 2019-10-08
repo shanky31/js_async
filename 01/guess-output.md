@@ -11,6 +11,9 @@ console.log("Hey You!");
 ```
 
  output
+'Hey You!'
+and after a delay of 1sec.
+'Hey You Called Me'
 
 2.
 ```js
@@ -23,6 +26,8 @@ setTimeout(sayHello, 0);
 console.log("Hey You!");
 ```
  output
+'Hey You!'
+'Hey You Called Me'
 
 3.
 ```js
@@ -36,6 +41,7 @@ function main() {
 main();
 ```
  output
+ A,C,B
 
 4.
 ```js
@@ -56,6 +62,7 @@ function main() {
 }
 
  output
+A,C and after 3 seconds B.
 
 5. Look at the output of the code below to understand hwo things are happening.
 
@@ -78,5 +85,9 @@ function main() {
 }
 
 main();
+````
 
-```
+output
+A 0
+C 3001
+B 3002
