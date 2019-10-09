@@ -46,9 +46,15 @@ brokenRecord(); // should log (every second): hi again
 
 function limitedRepeat() {
   // ADD CODE HERE
+  var i = 0
+  var x = setInterval(()=> {
+    i++;
+    console.log('Hi Again');
+    if(i > 4) clearInterval(x);
+  }, 1000);
 }
 // Uncomment the following line to check your work!
-// limitedRepeat(); // should log (every second, for 5 seconds): hi for now
+limitedRepeat(); // should log (every second, for 5 seconds): hi for now
 
 /* CHALLENGE 6 */
 
