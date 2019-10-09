@@ -52,11 +52,22 @@ function limitedRepeat() {
 
 /* CHALLENGE 6 */
 
-function everyXsecsForYsecs() {
+function everyXsecsForYsecs(func,interval,duration) {
   // ADD CODE HERE
+  interval = interval*1000;
+  duration = duration*1000;
+  var intervalDuration = setInterval(func, interval);
+  setTimeout(() => {
+    clearInterval(intervalDuration)
+  }, duration);
 }
+
 // Uncomment the following lines to check your work!
-// function theEnd() {
-//   console.log('This is the end!');
-// }
-// everyXsecsForYsecs(theEnd, 2, 20); // should invoke theEnd function every 2 seconds, for 20 seconds): This is the end!
+function theEnd() {
+  console.log('This is the end!');
+}
+function sayHi() {
+  console.log('say Hi');
+}
+everyXsecsForYsecs(theEnd, 2, 20); // should invoke theEnd function every 2 seconds, for 20 seconds): This is the end!
+everyXsecsForYsecs(sayHi, 1, 5); // should invoke theEnd function every 2 seconds, for 20 seconds): This is the end!very 2 seconds, for 20 seconds): This is the end!
