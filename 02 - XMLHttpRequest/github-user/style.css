@@ -1,0 +1,20 @@
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+input {
+    font-size: 32px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border: 2px solid goldenrod;
+}
+button {
+    border: none;
+    background: #89f0a4;
+    font-size: 32px;
+
+}
+ul {
+    list-style: none;
+}
